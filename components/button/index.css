@@ -377,7 +377,7 @@
 	border-color: var(--highcontrast-button-border-color-default, var(--mod-button-border-color-default, var(--spectrum-button-border-color-default)));
 
 	/* let staticColor variants inherit their color */
-	color: var(--mod-button-content-color-default, var(--spectrum-button-content-color-default, inherit));
+	color: var(--highcontrast-button-content-color-default, var(--mod-button-content-color-default, var(--spectrum-button-content-color-default, inherit)));
 	transition:
 		border var(--spectrum-button-animation-duration, 130ms) linear,
 		color var(--spectrum-button-animation-duration, 130ms) linear,
