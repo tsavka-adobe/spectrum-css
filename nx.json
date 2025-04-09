@@ -31,7 +31,7 @@
 	},
 	"targetDefaults": {
 		"build": {
-			"cache": true,
+			"cache": false,
 			"dependsOn": [
 				"^build",
 				"clean",
@@ -60,7 +60,7 @@
 			]
 		},
 		"clean": {
-			"cache": true,
+			"cache": false,
 			"executor": "nx:run-commands",
 			"inputs": [
 				"{projectRoot}/dist/*.{css,json}",
@@ -78,7 +78,7 @@
 			"outputs": []
 		},
 		"compare": {
-			"cache": true,
+			"cache": false,
 			"dependsOn": ["build"],
 			"executor": "nx:run-commands",
 			"inputs": [
@@ -108,7 +108,7 @@
 			"outputs": ["{workspaceRoot}/.diff-output"]
 		},
 		"format": {
-			"cache": true,
+			"cache": false,
 			"executor": "nx:run-commands",
 			"inputs": [
 				"core",
@@ -127,7 +127,7 @@
 			}
 		},
 		"lint": {
-			"cache": true,
+			"cache": false,
 			"executor": "nx:run-commands",
 			"inputs": [
 				"core",
@@ -145,7 +145,7 @@
 			}
 		},
 		"report": {
-			"cache": true,
+			"cache": false,
 			"executor": "nx:run-commands",
 			"inputs": [
 				"core",
@@ -163,7 +163,7 @@
 			]
 		},
 		"test": {
-			"cache": true,
+			"cache": false,
 			"configurations": {
 				"plugins": {
 					"commands": ["ava test.js"],
